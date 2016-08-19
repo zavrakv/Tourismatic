@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" uploadOnCheckin="e81ef062-2820-4372-abe0-6751c158b28a">
+    <serverData>
+      <paths name="alamart">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cathedral-mz">
+        <serverdata>
+          <mappings>
+            <mapping deploy="public_html" local="$PROJECT_DIR$" web="/public_html" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="cathedral-mz" />
+  </component>
+</project>
