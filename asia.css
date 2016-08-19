@@ -1,0 +1,27 @@
+.topper {
+    background-color: #FFA165;
+}
+
+.navmenu {
+    background-color: #FFA165;
+}
+
+.country-head > .panel-heading {
+    background-color: #FFA165;
+}
+
+.footer {
+    background-color: #FFA165;
+}
+
+.sideanchor {
+    background-color: rgba(255, 161, 101, 0.51);
+}
+
+.sideanchor:hover {
+    background-color: rgba(255, 161, 101, 0.71);
+}
+
+.bukvica::first-letter {
+    color: sandybrown;
+}

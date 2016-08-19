@@ -1,0 +1,285 @@
+body {
+    background: url("img/main/norway.jpg") center center fixed;
+    background-size: cover;
+    font-family: 'Calibri', 'Arial', monospace;
+    height: 100%;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    transition: 0.7s ease;
+    -webkit-animation: Fade 0.6s 1 ease-in-out forwards;
+    -moz-animation: Fade 0.6s 1 ease-in-out forwards;
+    animation: Fade 0.6s ease-in-out;
+}
+
+a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.welcome a{
+    color: honeydew;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(47, 47, 47, 0.39);
+}
+
+.welcome a:hover {
+    background-color: rgba(47, 47, 47, 0.69);
+}
+
+.flagnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.flagnav a {
+    border:solid 1px seagreen;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.flagnav a:hover img {
+    filter: saturate(120%);
+    -webkit-filter: saturate(120%);
+    transition: ease 0.5s;
+}
+
+.flagnav a:focus img {
+    filter: saturate(120%);
+    -webkit-filter: saturate(120%);
+    transition: ease-in-out 0.5s;
+}
+
+.flagnav img {
+    filter: saturate(50%);
+    -webkit-filter: saturate(50%);
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: seagreen;
+}
+
+.navmenu {
+    background-color: transparent;
+    border:none;
+    display: none;
+    margin: 8% auto;
+    color:honeydew;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.navmenu ul {
+    padding: 0;
+    border:none;
+    box-shadow: none;
+}
+
+.navmenu ul li a {
+    color: honeydew;
+}
+
+.navmenu ul li a[aria-expanded=false] {
+    background-color: transparent;
+}
+
+.navmenu ul li a[aria-expanded=false]:hover {
+    background-color: seagreen;
+}
+
+.dropmenu ul {
+    background-color: rgba(47, 47, 47, 0.39) !important;
+}
+
+.dropmenu ul li a {
+    font-size: 1.8em;
+    color: honeydew;
+    font-weight: 600;
+}
+
+.dropmenu ul li a:hover {
+    background-color: seagreen;
+}
+
+.dropmenu > .dropdown-menu {
+    -webkit-animation: Fade 0.6s 1 ease-in-out forwards;
+    -moz-animation: Fade 0.6s 1 ease-in-out forwards;
+}
+
+.navheadermobile {
+    display: flex;
+    justify-content: center;
+}
+
+.navheadermobile button {
+    background-color: rgba(47, 47, 47, 0.39);
+    border: none;
+    margin-right: 0;
+}
+
+.navheadermobile button:hover {
+    background-color: rgba(47, 47, 47, 0.69);
+}
+
+.navheadermobile button:focus {
+    background-color: rgba(47, 47, 47, 0.39);
+}
+
+.navheadermobile button[aria-expanded=true] {
+    background-color: transparent;
+}
+
+
+@keyframes Fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .flagnav img {
+        width:100px;
+        height:auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcome {
+        font-size: 1.9em;
+    }
+
+    .navmenu {
+        font-size: 1.5em;
+    }
+
+    .dropmenu ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 770px) {
+    .flagnav img {
+        width:80px;
+        height:auto;
+    }
+
+    .navmenu {
+        font-size: 1.2em;
+
+    }
+
+    .dropmenu {
+        display: inline-block;
+        float:left;
+    }
+
+    .dropmenu ul li a {
+        font-size: 1.2em;
+    }
+
+    .welcome {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .navmenu {
+        margin-top:2%;
+    }
+
+    #menubutton {
+        margin:0;
+    }
+
+    .flagnav img {
+        width:70px;
+        height:auto;
+    }
+
+    .navmenu {
+        font-size: 1em;
+
+    }
+
+    .dropmenu ul li a {
+        font-size: 1em;
+        line-height: 15px !important;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .flagnav img {
+        width:50px;
+        height:auto;
+    }
+
+    .welcome {
+        font-size: 1.4em;
+    }
+
+    .dropmenu {
+        max-width: 120px;
+    }
+
+    .dropmenu a {
+        padding: 10px 5px 10px 5px !important;
+    }
+
+    #mainm li ul {
+        min-width: 120px;
+    }
+
+    #mainm {
+        overflow-y: hidden;
+    }
+
+    .dropmenu ul li a {
+        padding:3px 5px 3px 5px !important;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .dropmenu{
+        display: block;
+        float:none;
+    }
+
+    #mainm li > ul {
+        background-color: rgba(47, 47, 47, 0.39);
+    }
+
+    .flagnav img {
+        width:40px;
+        height:auto;
+    }
+
+    .welcome {
+        font-size: 1.15em;
+    }
+}
+
+@media  (max-height: 420px) and (orientation:landscape) {
+
+    .navmenu {
+        margin-top:0;
+    }
+
+    .dropmenu ul li a {
+        line-height: 15px !important;
+    }
+
+}

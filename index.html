@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tourismatic - discover World with Us!</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body onload="init()">
+
+<div class="container-fluid">
+
+
+    <h1 class="welcome"><a href="#choose" id="welcome">Откройте мир вместе с Tourismatic!</a></h1>
+
+    <div class="row">
+      <nav class="col-lg-12 col-md-12 col-xs-12 navbar navmenu" role="navigation" id="choose">
+          <div class="container-fluid">
+              <div class="navbar-header navheadermobile">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainm" id="menubutton">
+                      МЕНЮ
+                  </button>
+              </div>
+              <ul class="nav navbar-nav collapse navbar-collapse" id="mainm">
+                  <li role="presentation" class="dropdown dropmenu" id="dropmenu">
+                      <a class="dropdown-toggle dropli" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="cl">
+                          ЕВРОПА <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="norway.html">Норвегия</a></li>
+                          <li><a href="moldova.html">Молдова</a></li>
+                          <li><a href="odessa.html">Одесса</a></li>
+                          <li><a href="croatia.html">Хорватия</a></li>
+                          <li><a href="scotland.html">Шотландия</a></li>
+                          <li><a href="greece.html">Греция</a></li>
+                          <li><a href="russia.html">Россия</a></li>
+                      </ul>
+                  </li>
+
+                  <li role="presentation" class="dropdown dropmenu">
+                      <a class="dropdown-toggle dropli" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          АЗИЯ <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="china.html">Китай</a></li>
+                          <li><a href="india.html">Индия</a></li>
+                          <li><a href="japan.html">Япония</a></li>
+                          <li><a href="#">Таиланд</a></li>
+                          <li><a href="#">Индонезия</a></li>
+                          <li><a href="#">Турция</a></li>
+                          <li><a href="#">Грузия</a></li>
+                      </ul>
+                  </li>
+
+                  <li role="presentation" class="dropdown dropmenu">
+                      <a class="dropdown-toggle dropli" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          АФРИКА <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="egypt.html">Египет</a></li>
+                          <li><a href="#">Тунис</a></li>
+                          <li><a href="#">Марокко</a></li>
+                          <li><a href="#">Нигерия</a></li>
+                          <li><a href="#">Конго</a></li>
+                          <li><a href="#">ЮАР</a></li>
+                          <li><a href="#">Мадагаскар</a></li>
+                      </ul>
+                  </li>
+
+                  <li role="presentation" class="dropdown dropmenu">
+                      <a class="dropdown-toggle dropli" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          АМЕРИКА <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">США</a></li>
+                          <li><a href="canada.html">Канада</a></li>
+                          <li><a href="#">Мексика</a></li>
+                          <li><a href="#">Куба</a></li>
+                          <li><a href="#">Бразилия</a></li>
+                          <li><a href="#">Перу</a></li>
+                          <li><a href="#">Аргентина</a></li>
+                      </ul>
+                  </li>
+
+                  <li role="presentation" class="dropdown dropmenu">
+                      <a class="dropdown-toggle dropli" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          АВСТРАЛИЯ <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Австралия</a></li>
+                          <li><a href="#">Новая Зеландия</a></li>
+                          <li><a href="kiribati.html">Кирибати</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+
+        <div class="clearfix"></div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 flagnav navbar-fixed-bottom">
+            <a href="#" id="norway" data-country="nw" data-color="honeydew" data-bg-image="img/main/norway.jpg"><img src="img/flags/norway.jpg" class="img-circle" id="image"></a>
+            <a href="#" id="moldova" data-country="md" data-color="honeydew" data-bg-image="img/main/moldova.jpg"><img src="img/flags/moldova.jpg" class="img-circle"></a>
+            <a href="#" id="odessa" data-country="od" data-color="honeydew" data-bg-image="img/main/odessa.jpg"><img src="img/flags/odessa.jpg" class="img-circle"></a>
+            <a href="#" id="croatia" data-country="cr" data-color="honeydew" data-bg-image="img/main/croatia.jpg"><img src="img/flags/croatia.jpg" class="img-circle"></a>
+            <a href="#" id="russia" data-country="ru" data-color="honeydew" data-bg-image="img/main/russia.jpg"><img src="img/flags/russia.jpg" class="img-circle"></a>
+            <a href="#" id="scotland" data-country="sc" data-color="black" data-bg-image="img/main/scotland.jpg"><img src="img/flags/scotland.jpg" class="img-circle"></a>
+            <a href="#" id="greece" data-country="gr" data-color="honeydew" data-bg-image="img/main/greece.jpg"><img src="img/flags/greece.jpg" class="img-circle"></a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

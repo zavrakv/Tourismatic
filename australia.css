@@ -1,0 +1,31 @@
+.topper {
+    background-color: #00B1A9;
+}
+
+.navmenu {
+    background-color: #00B1A9;
+}
+
+.country-head > .panel-heading {
+    background-color: #00B1A9;
+}
+
+.footer {
+    background-color: #00B1A9;
+}
+
+.sideanchor {
+    background-color: rgba(0, 177, 169, 0.51);
+}
+
+.sideanchor:hover {
+    background-color: rgba(0, 177, 169, 0.71);
+}
+
+.bukvica::first-letter {
+    color: teal;
+}
+
+.climat {
+    float:right;
+}
